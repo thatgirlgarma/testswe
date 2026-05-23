@@ -347,8 +347,7 @@ if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1
   if (Q.judicial_reform >= 4 && Q.weltbuhne_dropped = 1 && Q.hitler_deported = 1 && Q.rohm_explode = 1 && Q.prussia_legal_returned = 1 && Q.rfb_banned = 1) {
     this.achieve('die_rote_justiz');
   }
-  if (Q.lautenbach_adopted == 1 && Q.nationalization_progress >= 1 && Q.chancellor == "Brüning") {
-    this.achieve('bruning_der_rotfrontkampfer');
+// Bruning der Rotfrontkampfer
   }
 // Merz und Scholz
   if (Q.lvp_r == 0 && Q.lvp_formed) {
