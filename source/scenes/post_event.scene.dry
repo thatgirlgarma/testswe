@@ -7,7 +7,7 @@ if (Q.social_patriot && Q.neorevisionism && !Q.left_split && !Q.centrists_resign
 }
 
 if (Q.chancellor = "Brüning" && Q.nationalization_progress > 0 && Q.lautenbach_adopted == 1) {
-    this.achieve.('bruning_der_rotfrontkampfer');
+    this.achieve('bruning_der_rotfrontkampfer');
 }
 
 const q = dendryUI.dendryEngine.state.qualities;
