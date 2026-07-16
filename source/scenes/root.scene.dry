@@ -121,7 +121,7 @@ Q.moderate_plan_adopted = 0;
 // organizations
 
 // inter-party relations
-Q.lib-s_relation = 60;
+Q.lib_relation = 60;
 // avf and NSDAP are invariably hostile
 Q.avf_relation = 5;
 
@@ -244,8 +244,8 @@ Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'farmowners', 'peasants', 'industrialists_and_aristocracy'];
-Q.parties = ['sap', 'lib-s', 'avf',];
-Q.parties_graph = ['sap', 'lib-s', 'avf'];
+Q.parties = ['sap', 'lib', 'avf',];
+Q.parties_graph = ['sap', 'lib', 'avf'];
 
 Q.ssv_formed = 0;
 Q.dnf_formed = 0;
@@ -257,27 +257,27 @@ Q.cvp_formed = 0;
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
 Q.workers_sap = 77;
-Q.workers_lib-s = 20;
+Q.workers_lib = 20;
 Q.workers_avf = 3;
 
 Q.new_middle_sap = 8;
-Q.new_middle_lib-s = 68;
+Q.new_middle_lib = 68;
 Q.new_middle_avf = 24;
 
 Q.old_middle_sap = 4;
-Q.old_middle_lib-s = 33;
+Q.old_middle_lib = 33;
 Q.old_middle_avf = 63;
 
 Q.farmowners_sap = 6;
-Q.farmowners_lib-s = 44;
+Q.farmowners_lib = 44;
 Q.farmowners_avf = 50;
 
 Q.peasants_sap = 29;
-Q.peasants_lib-s = 47;
+Q.peasants_lib = 47;
 Q.peasants_avf = 24;
 
 Q.industrialists_and_aristocracy_sap = 0;
-Q.industrialists_and_aristocracy_lib-s = 5;
+Q.industrialists_and_aristocracy_lib = 5;
 Q.industrialists_and_aristocracy_avf = 95;
 
 Q.workers_sap_old = 60;
@@ -294,20 +294,20 @@ Q.industrialists_and_aristocracy_sap_old = 20;
 // since they were ideologically similar, but they were separate parties.
 // They did not have a CDU/CSU-style relationship.
 Q.sap_r = 31.7;
-Q.lib-s_r = 30.9;
+Q.lib_r = 30.9;
 Q.avf_r = 37.4;
 Q.reichstag_size = 4.93;
 Q.landtag_size = 4.5;
 
 // diff from prev
 Q.old_sap_r = 26.5;
-Q.old_lib-s_r = 6.5;
+Q.old_lib_r = 6.5;
 Q.old_avf_r = 20.9;
 
 
 // old election votes
 Q.previous_sap_last_election_votes = 30.1;
-Q.previous_lib-s_last_election_votes = 32.2;
+Q.previous_lib_last_election_votes = 32.2;
 Q.previous_avf_last_election_votes = 37.7;
 
 
@@ -333,7 +333,7 @@ Q.previous_schleicher_dnef_last_election_votes_prussia = 0.0;
 Q.sap_r_prussia = 25.3;
 Q.kpd_r_prussia = 9.8;
 Q.z_r_prussia = 18.0;
-Q.lib-s_r_prussia = 6.0;
+Q.lib_r_prussia = 6.0;
 Q.dvp_r_prussia = 10.0;
 Q.avf_r_prussia = 24.2;
 Q.nsdap_r_prussia = 2.5;
@@ -343,7 +343,7 @@ Q.other_r_prussia = 4.2;
 Q.old_sap_r_prussia = 25.3;
 Q.old_kpd_r_prussia = 9.8;
 Q.old_z_r_prussia = 18.0;
-Q.old_lib-s_r_prussia = 6.0;
+Q.old_lib_r_prussia = 6.0;
 Q.old_dvp_r_prussia = 10.0;
 Q.old_avf_r_prussia = 24.2;
 Q.old_nsdap_r_prussia = 2.5;
@@ -353,7 +353,7 @@ Q.old_other_r_prussia = 4.2;
 Q.previous_sap_last_election_votes_prussia = 24.9;
 Q.previous_kpd_last_election_votes_prussia = 9.6;
 Q.previous_z_last_election_votes_prussia = 17.6;
-Q.previous_lib-s_last_election_votes_prussia = 5.9;
+Q.previous_lib_last_election_votes_prussia = 5.9;
 Q.previous_dvp_last_election_votes_prussia = 9.8;
 Q.previous_avf_last_election_votes_prussia = 23.7;
 Q.previous_nsdap_last_election_votes_prussia = 2.5;
@@ -362,7 +362,7 @@ Q.previous_other_last_election_votes_prussia = 6.0;
 Q.sap_votes = 27.9;
 Q.kpd_votes = 11.4;
 Q.z_votes = 15.1;
-Q.lib-s_votes = 4.7;
+Q.lib_votes = 4.7;
 Q.dvp_votes = 8.6;
 Q.avf_votes = 15.2;
 Q.nsdap_votes = 2.6;
@@ -421,7 +421,7 @@ Q.adjustmentFactors_sap = 1.0;
 Q.adjustmentFactors_ssv = 1.0;
 Q.adjustmentFactors_kpd = 1.0;
 Q.adjustmentFactors_z = 1.0;
-Q.adjustmentFactors_lib-s = 1.0;
+Q.adjustmentFactors_lib = 1.0;
 Q.adjustmentFactors_dvp = 1.0;
 Q.adjustmentFactors_lvp = 1.0;
 Q.adjustmentFactors_avf = 1.0;
@@ -435,7 +435,7 @@ Q.adjustmentFactors_votes_sap = 1.0;
 Q.adjustmentFactors_votes_ssv = 1.0;
 Q.adjustmentFactors_votes_kpd = 1.0;
 Q.adjustmentFactors_votes_z = 1.0;
-Q.adjustmentFactors_votes_lib-s = 1.0;
+Q.adjustmentFactors_votes_lib = 1.0;
 Q.adjustmentFactors_votes_dvp = 1.0;
 Q.adjustmentFactors_votes_lvp = 1.0;
 Q.adjustmentFactors_votes_avf = 1.0;
@@ -449,7 +449,7 @@ Q.adjustmentFactors_sap_prussia = 1.0;
 Q.adjustmentFactors_ssv_prussia = 1.0;
 Q.adjustmentFactors_kpd_prussia = 1.0;
 Q.adjustmentFactors_z_prussia = 1.0;
-Q.adjustmentFactors_lib-s_prussia = 1.0;
+Q.adjustmentFactors_lib_prussia = 1.0;
 Q.adjustmentFactors_dvp_prussia = 1.0;
 Q.adjustmentFactors_lvp_prussia = 1.0;
 Q.adjustmentFactors_avf_prussia = 1.0;
@@ -478,7 +478,7 @@ Q.sap_in_government_time = 0;
 Q.sap_in_government_total_time = 0;
 Q.sap_in_foreign_time = 0;
 Q.z_in_government = 0;
-Q.lib-s_in_government = 0;
+Q.lib_in_government = 0;
 Q.dvp_in_government = 0;
 Q.avf_in_government = 0;
 Q.kpd_in_government = 0;
@@ -487,12 +487,12 @@ Q.nsdap_in_government = 0;
 Q.sap_prussia_time = 0;
 
 Q.in_right_coalition = 0;
-// Weimar coalition = sap + Z + lib-s
+// Weimar coalition = sap + Z + lib
 Q.in_weimar_coalition = 0;
-// Grand coalition = sap + Z + BVP + lib-s + DVP
-// also includes the "new grand coalition" of sap + Z + BVP + lib-s + DVP + Others
+// Grand coalition = sap + Z + BVP + lib + DVP
+// also includes the "new grand coalition" of sap + Z + BVP + lib + DVP + Others
 Q.in_grand_coalition = 0;
-// Popular front = sap + KPD + Z + lib-s
+// Popular front = sap + KPD + Z + lib
 Q.in_popular_front = 0;
 // left coalition = sap + KPD + left-splinters
 Q.in_left_front = 0;
@@ -518,7 +518,7 @@ Q.in_minority_weimar_coalition_prussia = 0;
 Q.in_minority_grand_coalition_prussia = 0;
 Q.dvp_prussia_asked = 0;
 Q.in_far_right_coalition_prussia = 0;
-Q.lib-s_in_popular_front_prussia = 0;
+Q.lib_in_popular_front_prussia = 0;
 Q.kpd_goals_seen_prussia = 0;
 Q.reichsexekution = 0;
 Q.bruning_coalition_loss = 0;
@@ -783,13 +783,13 @@ Q.z_party_name = "Z";
 Q.avf_leader = "Westarp";
 Q.avf_ideology = "Radical";
 Q.dstp_formed = 0;
-Q.lib-s_left = 0;
-Q.lib-s_right = 0;
-Q.lib-s_name = "lib-s";
-Q.lib-s_full_name = "German Democratic Party";
-Q.lib-s_leader = "Koch-Weser";
-Q.lib-s_ideology = "Moderate"
-Q.lib-s_cohesion = 15;
+Q.lib_left = 0;
+Q.lib_right = 0;
+Q.lib_name = "lib";
+Q.lib_full_name = "German Democratic Party";
+Q.lib_leader = "Koch-Weser";
+Q.lib_ideology = "Moderate"
+Q.lib_cohesion = 15;
 Q.young_plan_signatures = 0;
 Q.young_plan_votes = 0;
 Q.weimar_ref_signatures = 0;
@@ -804,7 +804,7 @@ Q.dvp_ideology = "Moderate"
 Q.liberal_cooperation = 0;
 Q.liberal_parliament = 0;
 Q.bourgeois_parliament = 0;
-Q.bourgeois_parliament_lib-s = 0;
+Q.bourgeois_parliament_lib = 0;
 Q.bourgeois_parliament_kvp = 0;
 Q.dvp_congress_trigger = 0;
 Q.liberal_parliament_seen = 0;
@@ -859,7 +859,7 @@ Q.rubicon_time = 0;
 Q.reichstag_rubicon = 0;
 Q.nazi_peak = 25;
 Q.avf_westarp = 1;
-Q.lib-s_factionless_time = 0;
+Q.lib_factionless_time = 0;
 Q.wp_conflict_time = 0;
 Q.dvp_conflict_time = 0;
 Q.bruning_austerity_limited = 0;
@@ -945,7 +945,7 @@ Q.meissner_goal = "Become acquainted with the new chancellor";
 Q.oskar_goal = "Support the new chancellor";
 
 Q.industrial_z_backing = 0;
-Q.industrial_lib-s_backing = 1;
+Q.industrial_lib_backing = 1;
 Q.industrial_dvp_backing = 3;
 Q.industrial_lvp_backing = 4;
 Q.industrial_avf_backing = 3;
@@ -1180,11 +1180,11 @@ For more information on the politics and government of the German Republic, see 
 - @1928_challenge: Custom Modes
 
 @1928_easy
-on-arrival: difficulty = -1; resources = 4; dues = 5; base_dues = 5; rb_strength = 2500; kpd_relation = 29; z_relation = 54; dvp_relation = 49; lib-s_relation = 65; budget = 5;
+on-arrival: difficulty = -1; resources = 4; dues = 5; base_dues = 5; rb_strength = 2500; kpd_relation = 29; z_relation = 54; dvp_relation = 49; lib_relation = 65; budget = 5;
 go-to: 1928_main
 
 @1928_hard
-on-arrival: difficulty = 1; resources = 0; dues = 3; base_dues = 3; rb_strength = 1000; reformist_dissent = 25; left_dissent = 30; labor_dissent = 25; center_dissent = 25; z_relation = 41; kpd_relation = 16; dvp_relation = 31; lib-s_relation = 50; budget = 3
+on-arrival: difficulty = 1; resources = 0; dues = 3; base_dues = 3; rb_strength = 1000; reformist_dissent = 25; left_dissent = 30; labor_dissent = 25; center_dissent = 25; z_relation = 41; kpd_relation = 16; dvp_relation = 31; lib_relation = 50; budget = 3
 go-to: 1928_main
 
 @1928_historical
@@ -1203,7 +1203,7 @@ Q.center_dissent = 25;
 Q.z_relation = 41;
 Q.kpd_relation = 16;
 Q.dvp_relation = 31;
-Q.lib-s_relation = 55;
+Q.lib_relation = 55;
 Q.budget = 2;
 this.state.disableSaves = true;
 !}
@@ -1221,7 +1221,7 @@ Q.rb_strength = 2000;
 Q.z_relation = 41;
 Q.kpd_relation = 21;
 Q.dvp_relation = 31;
-Q.lib-s_relation = 55;
+Q.lib_relation = 55;
 Q.budget = 2;
 !}
 go-to: 1928_main
@@ -1237,7 +1237,7 @@ Q.rb_strength = 2000;
 Q.z_relation = 41;
 Q.kpd_relation = 21;
 Q.dvp_relation = 31;
-Q.lib-s_relation = 55;
+Q.lib_relation = 55;
 Q.budget = 2;
 !}
 go-to: 1928_main

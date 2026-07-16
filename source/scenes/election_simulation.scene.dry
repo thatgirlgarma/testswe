@@ -22,33 +22,33 @@ Q.industrialists_and_aristocracy = 1.4;
 Q.new_middle_qol = 100;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'farmowners', 'peasants', 'industrialists_and_aristocracy'];
-Q.parties = ['sap', 'lib-s', 'avf',];
+Q.parties = ['sap', 'lib', 'avf',];
 
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
 Q.workers_sap = 77;
-Q.workers_lib-s = 20;
+Q.workers_lib = 20;
 Q.workers_avf = 3;
 
 Q.new_middle_sap = 8;
-Q.new_middle_lib-s = 68;
+Q.new_middle_lib = 68;
 Q.new_middle_avf = 24;
 
 Q.old_middle_sap = 4;
-Q.old_middle_lib-s = 33;
+Q.old_middle_lib = 33;
 Q.old_middle_avf = 63;
 
 Q.farmowners_sap = 6;
-Q.farmowners_lib-s = 44;
+Q.farmowners_lib = 44;
 Q.farmowners_avf = 50;
 
 Q.peasants_sap = 29;
-Q.peasants_lib-s = 47;
+Q.peasants_lib = 47;
 Q.peasants_avf = 24;
 
 Q.industrialists_and_aristocracy_sap = 0;
-Q.industrialists_and_aristocracy_lib-s = 5;
+Q.industrialists_and_aristocracy_lib = 5;
 Q.industrialists_and_aristocracy_avf = 95;
 !}
 go-to: election_algorithm
@@ -73,27 +73,27 @@ Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
 Q.workers_sap = 77;
-Q.workers_lib-s = 20;
+Q.workers_lib = 20;
 Q.workers_avf = 3;
 
 Q.new_middle_sap = 8;
-Q.new_middle_lib-s = 68;
+Q.new_middle_lib = 68;
 Q.new_middle_avf = 24;
 
 Q.old_middle_sap = 4;
-Q.old_middle_lib-s = 33;
+Q.old_middle_lib = 33;
 Q.old_middle_avf = 63;
 
 Q.farmowners_sap = 6;
-Q.farmowners_lib-s = 44;
+Q.farmowners_lib = 44;
 Q.farmowners_avf = 50;
 
 Q.peasants_sap = 29;
-Q.peasants_lib-s = 47;
+Q.peasants_lib = 47;
 Q.peasants_avf = 24;
 
 Q.industrialists_and_aristocracy_sap = 0;
-Q.industrialists_and_aristocracy_lib-s = 5;
+Q.industrialists_and_aristocracy_lib = 5;
 Q.industrialists_and_aristocracy_avf = 95;
 !}
 go-to: election_algorithm
@@ -113,32 +113,32 @@ Q.peasants = 19;
 Q.industrialists_and_aristocracy = 1.4;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'farmowners', 'peasants', 'industrialists_and_aristocracy'];
-Q.parties = ['sap', 'lib-s', 'avf',];
+Q.parties = ['sap', 'lib', 'avf',];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
 Q.workers_sap = 77;
-Q.workers_lib-s = 20;
+Q.workers_lib = 20;
 Q.workers_avf = 3;
 
 Q.new_middle_sap = 8;
-Q.new_middle_lib-s = 68;
+Q.new_middle_lib = 68;
 Q.new_middle_avf = 24;
 
 Q.old_middle_sap = 4;
-Q.old_middle_lib-s = 33;
+Q.old_middle_lib = 33;
 Q.old_middle_avf = 63;
 
 Q.farmowners_sap = 6;
-Q.farmowners_lib-s = 44;
+Q.farmowners_lib = 44;
 Q.farmowners_avf = 50;
 
 Q.peasants_sap = 29;
-Q.peasants_lib-s = 47;
+Q.peasants_lib = 47;
 Q.peasants_avf = 24;
 
 Q.industrialists_and_aristocracy_sap = 0;
-Q.industrialists_and_aristocracy_lib-s = 5;
+Q.industrialists_and_aristocracy_lib = 5;
 Q.industrialists_and_aristocracy_avf = 95;
 !}
 go-to: election_algorithm
@@ -148,13 +148,13 @@ set-jump: post_election
 on-arrival: {!
 // set congress proportion to votes
 Q.sap_r = Q.sap_votes;
-Q.lib-s_r = Q.lib-s_votes;
+Q.lib_r = Q.lib_votes;
 Q.avf_r = Q.avf_votes;
 
 }
 
 // coalitions
-Q.left_coalition = Q.sap_r + Q.lib-s_r;
+Q.left_coalition = Q.sap_r + Q.lib_r;
 
 !}
 
@@ -166,7 +166,7 @@ The electoral system is essentially proportional, with the proportion of Reichst
 SAP: [+ sap_r +]
 
 # 1928: 5, 1930: 4 (as DStP)
-LIB-S: [+ lib-s_r +]
+LIB: [+ lib_r +]
 
 # 1928: 14, 1930: 7
 AVF: [+ avf_r +]
@@ -174,6 +174,6 @@ AVF: [+ avf_r +]
 
 **Potential coalitions:**
 
-Left Coalition (SAP + LIB-S): [+ left_coalition  +]
+Left Coalition (SAP + LIB): [+ left_coalition  +]
 
 
