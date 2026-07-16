@@ -151,7 +151,7 @@ Q.sap_r = Q.sap_votes;
 Q.lib_r = Q.lib_votes;
 Q.avf_r = Q.avf_votes;
 
-}
+
 
 // coalitions
 Q.left_coalition = Q.sap_r + Q.lib_r;
